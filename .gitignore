@@ -1,0 +1,33 @@
+# Executable files
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Dev-C++ project files
+*.dev
+*.dep
+*.layout
+*.aps
+
+# Windows Makefiles
+*.win
+
+# Debug / temporary files
+*.gch
+*.pch
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Visual Studio / other IDE artifacts (if accidentally opened)
+*.suo
+*.user
+*.vcxproj*
+*.ncb
+*.ipch
+*.opensdf
+*.tlog
