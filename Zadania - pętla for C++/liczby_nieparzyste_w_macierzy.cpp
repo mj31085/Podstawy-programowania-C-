@@ -13,7 +13,7 @@ int main() {
 	cin >> columns;
 		
 	for (int i = 1; i <= rows; i++) {
-		for (int i = 1; i <= columns; i++) {
+		for (int j = 1; j <= columns; j++) {
 			if (output_number < 10) {
 				std::cout << " ";
 			}
