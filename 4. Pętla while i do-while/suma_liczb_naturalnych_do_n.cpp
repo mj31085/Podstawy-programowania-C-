@@ -13,6 +13,6 @@ int main() {
 		count += 1;
 	}
 	
-	std::cout << sum << endl;
+	std::cout << "Suma liczb naturalnych do " << n << ": " << sum << endl;
 	
 }

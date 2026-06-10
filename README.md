@@ -41,7 +41,7 @@ g++ --version
 6. Zmienne tablicowe
 7. Tablice znakowe i obiekty string
 8. Funkcje
-9. Rekurencja / Przeciążenie funkcji
+9. Rekurencja i przeciążenie funkcji
 10. Wskaźniki
 11. Struktury danych
 12. Operacje na plikach
