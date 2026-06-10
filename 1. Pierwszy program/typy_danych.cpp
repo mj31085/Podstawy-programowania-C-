@@ -1,13 +1,13 @@
 #include <iostream>
 
 int main() {
-	int a = 10;
-	float b = 3.14;
-	char c = 'A';
-	bool  d = true;
+	int liczba_calkowita = 10;
+	float liczba_zmiennoprzecinkowa = 3.14;
+	char znak = 'A';
+	bool wartosc_logiczna = true;
 	
-	std::cout << "Zmienna całkowita: " << a << std::endl;
-	std::cout << "Zmienna zmiennoprzecinkowa: " << b << std::endl;
-	std::cout << "Zmienna znakowa: " << c << std::endl;
-	std::cout << "Zmienna logiczna: " << d << std::endl;
+	std::cout << "Zmienna całkowita: " << liczba_calkowita << std::endl;
+	std::cout << "Zmienna zmiennoprzecinkowa: " << liczba_zmiennoprzecinkowa << std::endl;
+	std::cout << "Zmienna znakowa: " << znak << std::endl;
+	std::cout << "Zmienna logiczna: " << wartosc_logiczna << std::endl;
 }

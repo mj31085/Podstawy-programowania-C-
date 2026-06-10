@@ -3,22 +3,22 @@
 using namespace std;
 
 string GetTextFromUser() {
-	string text;
+	string tekst;
 	cout << "Podaj ciag znakow: ";
-	getline(cin, text);
-	return text;
+	getline(cin, tekst);
+	return tekst;
 }
 
-string ReverseString(string text) {
+string ReverseString(string tekst) {
 	string odwrocony = "";
-	for (int i = text.length() - 1; i >= 0; i--) {
-		odwrocony += text[i];
+	for (int i = tekst.length() - 1; i >= 0; i--) {
+		odwrocony += tekst[i];
 	}
 	return odwrocony;
 }
 
-void DisplayResult(string text) {
-	cout << "Odwrocony ciag: " << text << endl;
+void DisplayResult(string tekst) {
+	cout << "Odwrocony ciag: " << tekst << endl;
 }
 
 int main() {

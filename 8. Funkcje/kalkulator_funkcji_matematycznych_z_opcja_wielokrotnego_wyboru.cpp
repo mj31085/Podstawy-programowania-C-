@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-double Suma(double a, double b) {
-	return a + b;
+double Suma(double pierwsza_liczba, double druga_liczba) {
+	return pierwsza_liczba + druga_liczba;
 }
 
-double Roznica(double a, double b) {
-	return a - b;
+double Roznica(double pierwsza_liczba, double druga_liczba) {
+	return pierwsza_liczba - druga_liczba;
 }
 
-double Iloczyn(double a, double b) {
-	return a * b;
+double Iloczyn(double pierwsza_liczba, double druga_liczba) {
+	return pierwsza_liczba * druga_liczba;
 }
 
-double Iloraz(double a, double b) {
-	return a / b;
+double Iloraz(double pierwsza_liczba, double druga_liczba) {
+	return pierwsza_liczba / druga_liczba;
 }
 
 int main() {

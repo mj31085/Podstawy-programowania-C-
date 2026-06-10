@@ -2,17 +2,17 @@
 using namespace std;
 
 int main() {
-	int n;
+	int liczba;
 	std::cout << "Podaj liczbe N: ";
-	cin >> n;
+	cin >> liczba;
 	
-	short count = 0;
-	short sum = 0;
-	while(count <= n) {
-		sum += count; 
-		count += 1;
+	short licznik = 0;
+	short suma = 0;
+	while(licznik <= liczba) {
+		suma += licznik; 
+		licznik += 1;
 	}
 	
-	std::cout << "Suma liczb naturalnych do " << n << ": " << sum << endl;
+	std::cout << "Suma liczb naturalnych do " << liczba << ": " << suma << endl;
 	
 }

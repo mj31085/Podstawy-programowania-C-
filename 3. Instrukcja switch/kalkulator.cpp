@@ -2,28 +2,28 @@
 using namespace std;
 
 int main() {
-	int first_number;
+	int pierwsza_liczba;
 	std::cout << "Podaj pierwszą liczbę: ";
-	cin >> first_number;
-	int second_number;
+	cin >> pierwsza_liczba;
+	int druga_liczba;
 	std::cout << "Podaj drugą liczbę: ";
-	cin >> second_number;
-	char operation;
+	cin >> druga_liczba;
+	char operacja;
 	std::cout << "Podaj znak dzialania (+, -, *, /): ";
-	cin >> operation;
+	cin >> operacja;
 	
-	switch(operation) {
+	switch(operacja) {
 	case '+':
-		cout << "Wynik: " << first_number + second_number << endl;
+		cout << "Wynik: " << pierwsza_liczba + druga_liczba << endl;
 		break;
 	case '-':
-		cout << "Wynik: " << first_number - second_number << endl;
+		cout << "Wynik: " << pierwsza_liczba - druga_liczba << endl;
 		break;
 	case '*':
-		cout << "Wynik: " << first_number * second_number << endl;
+		cout << "Wynik: " << pierwsza_liczba * druga_liczba << endl;
 		break;
 	case '/':
-		cout << "Wynik: " << first_number / second_number << endl;
+		cout << "Wynik: " << pierwsza_liczba / druga_liczba << endl;
 		break;
 	default:
 		cout << "Błąd. Wprowadzono nieznany znak dzialania." << endl;

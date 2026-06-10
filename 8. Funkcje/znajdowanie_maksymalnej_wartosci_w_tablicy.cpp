@@ -9,25 +9,25 @@ void GetArrayFromUser(int tablica[], int rozmiar) {
 }
 
 int FindMaxValue(int tablica[], int rozmiar) {
-	int max = tablica[0];
+	int maksimum = tablica[0];
 	for (int i = 1; i < rozmiar; i++) {
-		if (tablica[i] > max) {
-			max = tablica[i];
+		if (tablica[i] > maksimum) {
+			maksimum = tablica[i];
 		}
 	}
-	return max;
+	return maksimum;
 }
 
-void DisplayResult(int max) {
-	cout << "Najwieksza liczba: " << max << endl;
+void DisplayResult(int maksimum) {
+	cout << "Najwieksza liczba: " << maksimum << endl;
 }
 
 int main() {
 	int tablica[5];
 
 	GetArrayFromUser(tablica, 5);
-	int max = FindMaxValue(tablica, 5);
-	DisplayResult(max);
+	int maksimum = FindMaxValue(tablica, 5);
+	DisplayResult(maksimum);
 
 	return 0;
 }

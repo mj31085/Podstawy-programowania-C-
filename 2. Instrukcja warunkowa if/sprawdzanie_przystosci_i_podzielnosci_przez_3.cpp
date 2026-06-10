@@ -2,15 +2,15 @@
 using namespace std;
 
 int main() {
-	int number;
+	int liczba;
 	std::cout << "Podaj liczbe calkowita: ";
-	cin >> number;
+	cin >> liczba;
 	
-	std::cout << "Liczba " << number << " jest ";
-	if (number % 2 == 0) std::cout << "parzysta." << std::endl;
+	std::cout << "Liczba " << liczba << " jest ";
+	if (liczba % 2 == 0) std::cout << "parzysta." << std::endl;
 	else std::cout << "nieparzysta." << std::endl;
 	
-	std::cout << "Liczba " << number;
-	if (number % 3 == 0) std::cout << " jest podzielna przez 3." << std::endl;
+	std::cout << "Liczba " << liczba;
+	if (liczba % 3 == 0) std::cout << " jest podzielna przez 3." << std::endl;
 	else std::cout << " nie jest podzielna przez 3." << std::endl;
 }

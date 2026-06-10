@@ -2,24 +2,24 @@
 using namespace std;
 
 int main() {
-	int rows;
-	int columns;
-	int output_number = 1;
+	int wiersze;
+	int kolumny;
+	int liczba_wyjsciowa = 1;
 	
 	std::cout << "Podaj liczbe wierszy: ";
-	cin >> rows;
+	cin >> wiersze;
 	
 	std::cout << "Podaj liczbe kolumn: ";
-	cin >> columns;
+	cin >> kolumny;
 		
-	for (int i = 1; i <= rows; i++) {
-		for (int j = 1; j <= columns; j++) {
-			if (output_number < 10) {
+	for (int i = 1; i <= wiersze; i++) {
+		for (int j = 1; j <= kolumny; j++) {
+			if (liczba_wyjsciowa < 10) {
 				std::cout << " ";
 			}
-			std::cout << output_number << " ";
+			std::cout << liczba_wyjsciowa << " ";
 
-			output_number = output_number + 2;
+			liczba_wyjsciowa = liczba_wyjsciowa + 2;
 		}
 		
 		cout << endl;	

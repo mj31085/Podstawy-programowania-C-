@@ -2,23 +2,23 @@
 using namespace std;
 
 int main() {
-	int a = 5;
-	int b = 10;
+	int liczba_a = 5;
+	int liczba_b = 10;
 
-	int *wskA = &a;
-	int *wskB = &b;
+	int *wskaznik_a = &liczba_a;
+	int *wskaznik_b = &liczba_b;
 
 	cout << "Przed modyfikacja:" << endl;
-	cout << "a = " << a << endl;
-	cout << "b = " << b << endl;
+	cout << "a = " << liczba_a << endl;
+	cout << "b = " << liczba_b << endl;
 
-	*wskA = 15;
-	*wskB = 20;
+	*wskaznik_a = 15;
+	*wskaznik_b = 20;
 
 	cout << endl;
 	cout << "Po modyfikacji:" << endl;
-	cout << "a = " << a << endl;
-	cout << "b = " << b << endl;
+	cout << "a = " << liczba_a << endl;
+	cout << "b = " << liczba_b << endl;
 
 	return 0;
 }

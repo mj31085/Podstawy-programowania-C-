@@ -2,27 +2,27 @@
 using namespace std;
 
 int GetNumberFromUser() {
-	int n;
+	int liczba;
 	cout << "Podaj liczbe: ";
-	cin >> n;
-	return n;
+	cin >> liczba;
+	return liczba;
 }
 
-int CalculateSumRecursive(int n) {
-	if (n == 1) {
+int CalculateSumRecursive(int liczba) {
+	if (liczba == 1) {
 		return 1;
 	}
-	return n + CalculateSumRecursive(n - 1);
+	return liczba + CalculateSumRecursive(liczba - 1);
 }
 
-void DisplayResult(int n, int suma) {
-	cout << "Suma liczb od 1 do " << n << " wynosi: " << suma << endl;
+void DisplayResult(int liczba, int suma) {
+	cout << "Suma liczb od 1 do " << liczba << " wynosi: " << suma << endl;
 }
 
 int main() {
-	int n = GetNumberFromUser();
-	int suma = CalculateSumRecursive(n);
-	DisplayResult(n, suma);
+	int liczba = GetNumberFromUser();
+	int suma = CalculateSumRecursive(liczba);
+	DisplayResult(liczba, suma);
 
 	return 0;
 }

@@ -10,14 +10,14 @@ int main() {
 		cin >> tablica[i];
 	}
 
-	int min = tablica[0];
+	int minimum = tablica[0];
 	for (int i = 1; i < 10; i++) {
-		if (tablica[i] < min) {
-			min = tablica[i];
+		if (tablica[i] < minimum) {
+			minimum = tablica[i];
 		}
 	}
 
-	cout << "Najmniejsza liczba to: " << min << endl;
+	cout << "Najmniejsza liczba to: " << minimum << endl;
 
 	return 0;
 }

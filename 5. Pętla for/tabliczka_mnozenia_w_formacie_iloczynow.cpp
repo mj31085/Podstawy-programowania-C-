@@ -2,14 +2,14 @@
 using namespace std;
 
 int main() {
-	int n;
+	int liczba;
 	
 	std::cout << "Podaj liczbe liczbe N: ";
-	cin >> n;
+	cin >> liczba;
 	
 		
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= n; j++) {
+	for (int i = 1; i <= liczba; i++) {
+		for (int j = 1; j <= liczba; j++) {
 			std::cout << i << " * " << j << " = " << i * j << endl;
 		}
 		

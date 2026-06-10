@@ -2,19 +2,19 @@
 using namespace std;
 
 int main() {
-	int n;
+	int liczba;
 	std::cout << "Podaj liczbe calkowita dodatnia N: ";
-	cin >> n;
+	cin >> liczba;
 	
-	short even_number_count = 0;
-	short count = 1;
+	short licznik_parzystych = 0;
+	short licznik = 1;
 	do {
-		if (count % 2 == 0) {
-			even_number_count++;
+		if (licznik % 2 == 0) {
+			licznik_parzystych++;
 		}
-		count += 1;
-	} while(count <= n);
+		licznik += 1;
+	} while(licznik <= liczba);
 	
-	std::cout << "Liczba liczb parzystych od 1 do " << n << " wynosi: " << even_number_count << endl;
+	std::cout << "Liczba liczb parzystych od 1 do " << liczba << " wynosi: " << licznik_parzystych << endl;
 
 }

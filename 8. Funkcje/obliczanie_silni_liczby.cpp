@@ -8,9 +8,9 @@ int GetNumberFromUser() {
 	return liczba;
 }
 
-int CalculateFactorial(int n) {
+int CalculateFactorial(int liczba) {
 	int silnia = 1;
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= liczba; i++) {
 		silnia *= i;
 	}
 	return silnia;

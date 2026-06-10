@@ -2,29 +2,29 @@
 using namespace std;
 
 int main() {
-    int rows;
-    int columns;
-    string previous_char = "*";
+    int szerokosc;
+    int wysokosc;
+    string poprzedni_znak = "*";
 
     cout << "Podaj szerokosc: ";
-    cin >> rows;
+    cin >> szerokosc;
 
     cout << "Podaj wysokosc: ";
-    cin >> columns;
+    cin >> wysokosc;
 
-    for (int i = 1; i <= columns; i++) {
-        for (int j = 1; j <= rows; j++) {
-        	if (i == 1 || i == columns) {
+    for (int i = 1; i <= wysokosc; i++) {
+        for (int j = 1; j <= szerokosc; j++) {
+        	if (i == 1 || i == wysokosc) {
         		cout << "-";
-			}else if ( j == 1 || j == rows) {
+			}else if ( j == 1 || j == szerokosc) {
                 cout << "|";
             }
             else {
-                cout << previous_char;
-                if (previous_char == "*") {
-                	previous_char = "#";
-				}else if (previous_char == "#") {
-					previous_char = "*";
+                cout << poprzedni_znak;
+                if (poprzedni_znak == "*") {
+                	poprzedni_znak = "#";
+				}else if (poprzedni_znak == "#") {
+					poprzedni_znak = "*";
 				}
             }
         }

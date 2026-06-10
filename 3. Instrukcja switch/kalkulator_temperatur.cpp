@@ -2,19 +2,19 @@
 using namespace std;
 
 int main() {
-	int temperature;
-	std::cout << "Podaj temperature w stopniach Celsjusza: ";
-	cin >> temperature;
-	char target_unit;
+	int temperatura;
+	std::cout << "Podaj temperatura w stopniach Celsjusza: ";
+	cin >> temperatura;
+	char jednostka_docelowa;
 	std::cout << "Wybierz jednostke docelowa (K - Kelvin, F - Fahrenheit): ";
-	cin >> target_unit;
+	cin >> jednostka_docelowa;
 	
-	switch(target_unit) {
+	switch(jednostka_docelowa) {
 		case 'K':
-			cout << "Temperatura w stopniach Kelvina: " << temperature + 273.15 << endl;
+			cout << "Temperatura w stopniach Kelvina: " << temperatura + 273.15 << endl;
 			break;
 		case 'F':
-			cout << "Temperatura w stopniach Fahrenheita: " << (temperature * 9/5) + 32 << endl;
+			cout << "Temperatura w stopniach Fahrenheita: " << (temperatura * 9/5) + 32 << endl;
 			break;
 		default:
 			cout << "Błąd. Wprowadzono nieznana jednostke docelowa." << endl;

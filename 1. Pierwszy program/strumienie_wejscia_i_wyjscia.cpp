@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 int main() {
-	string name;
+	string imie;
 	std::cout << "Podaj swoje imię: ";
-	cin >> name;
-	short age;
+	cin >> imie;
+	short wiek;
 	std::cout << "Podaj swój wiek: ";
-	cin >> age;
-	std::cout << "Witaj, " << name << "! Masz " << age << " lat.";
+	cin >> wiek;
+	std::cout << "Witaj, " << imie << "! Masz " << wiek << " lat.";
 }

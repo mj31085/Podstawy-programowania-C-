@@ -2,24 +2,24 @@
 using namespace std;
 
 int GetNumberFromUser() {
-	int n;
+	int liczba_elementow;
 	cout << "Podaj liczbe elementow: ";
-	cin >> n;
-	return n;
+	cin >> liczba_elementow;
+	return liczba_elementow;
 }
 
-int CalculateFibonacciRecursive(int n) {
-	if (n == 1 || n == 2) {
+int CalculateFibonacciRecursive(int indeks) {
+	if (indeks == 1 || indeks == 2) {
 		return 1;
 	}
-	return CalculateFibonacciRecursive(n - 1) + CalculateFibonacciRecursive(n - 2);
+	return CalculateFibonacciRecursive(indeks - 1) + CalculateFibonacciRecursive(indeks - 2);
 }
 
-void DisplayFibonacciSequence(int n) {
+void DisplayFibonacciSequence(int liczba_elementow) {
 	cout << "Ciag Fibonacciego: ";
-	for (int i = 1; i <= n; i++) {
+	for (int i = 1; i <= liczba_elementow; i++) {
 		cout << CalculateFibonacciRecursive(i);
-		if (i < n) {
+		if (i < liczba_elementow) {
 			cout << ", ";
 		}
 	}
@@ -27,8 +27,8 @@ void DisplayFibonacciSequence(int n) {
 }
 
 int main() {
-	int n = GetNumberFromUser();
-	DisplayFibonacciSequence(n);
+	int liczba_elementow = GetNumberFromUser();
+	DisplayFibonacciSequence(liczba_elementow);
 
 	return 0;
 }

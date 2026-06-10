@@ -2,22 +2,22 @@
 using namespace std;
 
 int main() {
-	int hours_count;
+	int liczba_godzin;
 	std::cout << "Podaj liczbe godzin parkowania: ";
-	cin >> hours_count;
-	char vehicle_type;
+	cin >> liczba_godzin;
+	char rodzaj_pojazdu;
 	std::cout << "Podaj rodzaj pojazdu (S - samochod, M - motocykl, A - autobus): ";
-	cin >> vehicle_type;
+	cin >> rodzaj_pojazdu;
 	
-	switch(vehicle_type) {
+	switch(rodzaj_pojazdu) {
 		case 'S':
-			cout << "Oplata za parkowanie: " << hours_count * 5 << " zl" << endl;
+			cout << "Oplata za parkowanie: " << liczba_godzin * 5 << " zl" << endl;
 			break;
 		case 'M':
-			cout << "Oplata za parkowanie: " << hours_count * 3 << " zl" << endl;
+			cout << "Oplata za parkowanie: " << liczba_godzin * 3 << " zl" << endl;
 			break;
 		case 'A':
-			cout << "Oplata za parkowanie: " << hours_count * 10 << " zl" << endl;
+			cout << "Oplata za parkowanie: " << liczba_godzin * 10 << " zl" << endl;
 			break;	
 		default:
 			cout << "Blad. Wprowadzono nieznany rodzaj pojazdu." << endl;

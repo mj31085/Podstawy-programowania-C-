@@ -2,14 +2,14 @@
 using namespace std;
 
 int main() {
-	int weight;
+	int waga;
 	std::cout << "Podaj wage (w kg): ";
-	cin >> weight;
-	float height;
+	cin >> waga;
+	float wzrost;
 	std::cout << "Podaj wzrost (w metrach): ";
-	cin >> height;
+	cin >> wzrost;
 	
-	float bmi = weight / (height * height);
+	float bmi = waga / (wzrost * wzrost);
 	std::cout << "Twoje BMI wynosi: " << bmi << std::endl;
 	std::cout << "Twój stan wagowy: ";
 	if (bmi <= 18.5) std::cout << "Niedowaga";

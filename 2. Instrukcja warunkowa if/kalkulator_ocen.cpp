@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-	int exam_score;
+	int wynik_egzaminu;
 	std::cout << "Podaj wynik egzaminu (liczba punktow): ";
-	cin >> exam_score;
+	cin >> wynik_egzaminu;
 	
-	if (exam_score <= 49) std::cout << "Ocena: Niedostateczna";
-	else if (exam_score <= 69) std::cout << "Ocena: Dostateczna";
-	else if (exam_score <= 84) std::cout << "Ocena: Dobra";
-	else if (exam_score <= 99) std::cout << "Ocena: Bardzo dobra";
-	else if (exam_score == 100) std::cout << "Ocena: Celująca";
+	if (wynik_egzaminu <= 49) std::cout << "Ocena: Niedostateczna";
+	else if (wynik_egzaminu <= 69) std::cout << "Ocena: Dostateczna";
+	else if (wynik_egzaminu <= 84) std::cout << "Ocena: Dobra";
+	else if (wynik_egzaminu <= 99) std::cout << "Ocena: Bardzo dobra";
+	else if (wynik_egzaminu == 100) std::cout << "Ocena: Celująca";
 }

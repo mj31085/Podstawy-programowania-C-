@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-	char again;
+	char odpowiedz;
 
 	do {
-		int n;
+		int liczba;
 		std::cout << "Podaj liczbe: ";
-		cin >> n;
-		std::cout << "Wprowadziles liczbe: " << n << endl;
+		cin >> liczba;
+		std::cout << "Wprowadziles liczbe: " << liczba << endl;
 		std::cout << "Czy chcesz wprowadzic kolejna liczbe? (t/n): ";
-		cin >> again;
-	} while (again == 't');
+		cin >> odpowiedz;
+	} while (odpowiedz == 't');
 
 	std::cout << "Dziekuje za wprowadzenie liczb!" << endl;
 }

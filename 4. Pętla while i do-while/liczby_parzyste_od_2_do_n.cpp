@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-	int n;
+	int liczba;
 	std::cout << "Podaj liczbe N: ";
-	cin >> n;
+	cin >> liczba;
 	
-	std::cout << "Liczby parzyste od 2 do " << n << ": " << endl;
-	short count = 2;
-	while(count <= n) {
-		if (count % 2 == 0) {
-			std::cout << count << endl;
+	std::cout << "Liczby parzyste od 2 do " << liczba << ": " << endl;
+	short licznik = 2;
+	while(licznik <= liczba) {
+		if (licznik % 2 == 0) {
+			std::cout << licznik << endl;
 		}
-		count += 1;
+		licznik += 1;
 	}
 }
