@@ -9,9 +9,9 @@ void LosujTablice(int *tablica, int rozmiar, int poczatek, int koniec) {
 	}
 }
 
-bool SprawdzLiczbe(int *liczba, int *tablica, int rozmiar) {
+bool SprawdzLiczbe(int liczba, int *tablica, int rozmiar) {
 	for (int i = 0; i < rozmiar; i++) {
-		if (*liczba == tablica[i]) {
+		if (liczba == tablica[i]) {
 			return true;
 		}
 	}
@@ -46,7 +46,7 @@ int main() {
 		cin >> liczba;
 		proby++;
 
-		if (SprawdzLiczbe(&liczba, tablica, rozmiar)) {
+		if (SprawdzLiczbe(liczba, tablica, rozmiar)) {
 			cout << "Zgadles!" << endl;
 			cout << "Zgadles za " << proby << " razem." << endl;
 			break;
